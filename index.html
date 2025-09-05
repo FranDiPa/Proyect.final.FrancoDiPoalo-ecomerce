@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <title>Ecommerce Repuestos VW</title>
+  <link rel="stylesheet" href="styles.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script> <!--moderno-->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/es.js"></script> <!--localización/dias-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/vw-logo.png" alt="Logo Vw" class="logo" />
+      <h1>Repuestos VW — Ecommerce</h1>
+    </div>
+    <div class="header-actions">
+      <input id="searchInput" class="search" type="search" placeholder="Buscar por nombre o código...">
+      <select id="categoryFilter" class="select"></select>
+      <button id="openCartBtn" class="btn">🛒 Carrito <span id="cartCount" class="pill">0</span></button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="toolbar">
+      <div class="sort">
+        <label for="sortSelect">Ordenar:</label>
+        <select id="sortSelect" class="select">
+          <option value="relevance">Relevancia</option>
+          <option value="price_asc">Precio ↑</option>
+          <option value="price_desc">Precio ↓</option>
+          <option value="name_asc">Nombre A – Z</option>
+          <option value="name_desc">Nombre Z – A</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="productsGrid" class="grid"></section>
+  </main>
+
+  <aside id="cartDrawer" class="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h2>Tu carrito </h2>
+      <button id="closeCartBtn" class="icon-btn" aria-label="Cerrar">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="coupon">
+        <input id="couponInput" class="input" placeholder="Código de cupón" />
+        <button id="applyCouponBtn" class="btn-secondary">Aplicar</button>
+      </div>
+      <div class="totals">
+        <div class="row"><span>Subtotal</span><span id="subTotal">$0</span></div>
+        <div class="row"><span>Descuento</span><span id="discount">$0</span></div>
+        <div class="row total"><span>Total</span><span id="grandTotal">$0</span></div>
+      </div>
+      <button id="checkoutBtn" class="btn-primary">Ir a pagar</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <!--CheckOut pago-->
+  <dialog id="checkoutModal" class="modal">
+    <form id="checkoutForm" class="form">
+      <h3>Datos</h3>
+      <div class="form-grid">
+        <label>Nombre y apellido
+          <input name="fullName" required class="input" value="Franco Di Paolo"/>
+        </label>
+        <label>Email
+          <input name="email" type="email" required class="input" value="franco@example.com"/>
+        </label>
+        <label>DNI
+          <input name="dni" required class="input" value="30111222"/>
+        </label>
+        <label>Dirección
+          <input name="address" required class="input" value="Av. Acc Oeste 1234"/>
+        </label>
+        <label>Medio de pago
+          <select name="payment" required class="select">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="debito">Débito</option>
+          </select>
+        </label>
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="cancelCheckoutBtn" class="btn-secondary">Cancelar</button>
+        <button type="submit" class="btn-primary">Confirmar compra</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <small>© 2025 ProyectoFinal-Franco.DiPaolo · Datos cargados vía JSON · Sin frameworks</small>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

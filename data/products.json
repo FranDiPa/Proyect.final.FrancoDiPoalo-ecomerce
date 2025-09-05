@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "img":"assets/bomba-agua.jpg",
+    "sku": "06L121011Q",
+    "name": "Bomba de agua — Suran 1.6",
+    "category": "Motor",
+    "price": 45999,
+    "stock": 18,
+    "compat": [
+      "Suran 1.6",
+      "Fox 1.6",
+      "Gol Trend 1.6"
+    ]
+  },
+  {
+    "id": 2,
+    "img":"assets/pastDel.webp",
+    "sku": "1K0615301AA",
+    "name": "Pastillas de freno — Delanteras",
+    "category": "Frenos",
+    "price": 32999,
+    "stock": 35,
+    "compat": [
+      "Vento 2.5",
+      "Golf 1.4 TSI"
+    ]
+  },
+  {
+    "id": 3,
+    "img":"assets/disco.webp",
+    "sku": "5K0615601",
+    "name": "Discos de freno — Ventilados",
+    "category": "Frenos",
+    "price": 78999,
+    "stock": 12,
+    "compat": [
+      "Golf 1.4 TSI"
+    ]
+  },
+  {
+    "id": 4,
+     "img":"assets/aire.webp",
+    "sku": "1K0129620D",
+    "name": "Filtro de aire",
+    "category": "Filtros",
+    "price": 11999,
+    "stock": 42,
+    "compat": [
+      "Gol Trend",
+      "Fox",
+      "Suran"
+    ]
+  },
+  {
+    "id": 5,
+     "img":"assets/bujias.webp",
+    "sku": "04E905612",
+    "name": "Bujías",
+    "category": "Encendido",
+    "price": 8999,
+    "stock": 60,
+    "compat": [
+      "Up!",
+      "Gol Trend 1.6",
+      "Polo 1.6 MSI"
+    ]
+  },
+  {
+    "id": 6,
+     "img":"assets/aire.webp",
+    "sku": "1K0129620F",
+    "name": "Filtro de polen",
+    "category": "Filtros",
+    "price": 13999,
+    "stock": 25,
+    "compat": [
+      "Polo",
+      "Virtus",
+      "T-cross"
+    ]
+  },
+  {
+    "id": 7,
+     "img":"assets/aceite.webp",
+    "sku": "G052553K4",
+    "name": "Aceite 5W-40 Sintético 4L",
+    "category": "Lubricantes",
+    "price": 74999,
+    "stock": 80,
+    "compat": [
+      "Todos"
+    ]
+  },
+  {
+    "id": 8,
+     "img":"assets/tuerca.webp",
+    "sku": "1K0951253",
+    "name": "Tuercas de seguridad",
+    "category": "Accesorios",
+    "price": 56999,
+    "stock": 8,
+    "compat": [
+      "Suran",
+      "Fox"
+    ]
+  },
+  {
+    "id": 9,
+     "img":"assets/vw-logo.png",
+    "sku": "5G0805901",
+    "name": "Paragolpes delantero — Primer",
+    "category": "Carrocería",
+    "price": 159999,
+    "stock": 5,
+    "compat": [
+      "Golf VII"
+    ]
+  },
+  {
+    "id": 10,
+     "img":"assets/llave.jpg",
+    "sku": "3C0959752",
+    "name": "Llave remota — Carcasa",
+    "category": "Accesorios",
+    "price": 9999,
+    "stock": 50,
+    "compat": [
+      "Varios modelos <2012"
+    ]
+  },
+  {
+    "id": 11,
+     "img":"assets/pastDel.webp",
+    "sku": "5Q0698451AF",
+    "name": "Pastillas de freno - Traseras",
+    "category": "Frenos",
+    "price": 69999,
+    "stock": 10,
+    "compat": [
+      "Taos"
+    ]
+  },
+  {
+    "id": 12,
+     "img":"assets/cobertor.webp",
+    "sku": "2h20959752",
+    "name": "Cobertor de caja",
+    "category": "Accesorios",
+    "price": 189999,
+    "stock": 14,
+    "compat": [
+      "Amarok 2.0/v6"
+    ]
+  },
+  {
+    "id": 13,
+      "img":"assets/bomba-agua.jpg",
+    "sku": "03l121011A",
+    "name": "Bomba de agua - Amarok",
+    "category": "Motor",
+    "price": 79999,
+    "stock": 20,
+    "compat": [
+      "Amarok"
+    ]
+  },
+  {
+    "id": 10,
+      "img":"assets/llave.jpg",
+    "sku": "5k0451689AGRU",
+    "name": "Llave",
+    "category": "Accesorios",
+    "price": 89999,
+    "stock": 3,
+    "compat": [
+      "T-cross"
+    ]
+  }
+]
